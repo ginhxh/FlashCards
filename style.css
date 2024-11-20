@@ -78,11 +78,13 @@ main {
   box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.2);
 }
 .contnt {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+}
+.gg {
+  margin-bottom: 16px;
 }
 
 input {
