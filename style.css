@@ -68,10 +68,12 @@ main {
 }
 .container {
   width: 30%;
-  height: 40%;
+  height: 20%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
+
   margin: 20px auto;
   background: rgb(202, 212, 214);
   padding: 4px;
@@ -82,6 +84,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  gap: 24px;
 }
 .gg {
   margin-bottom: 16px;
@@ -171,6 +174,7 @@ main ul li {
 @media (max-width: 560px) {
   .container {
     width: 80%;
+    height: 20vh;
   }
 }
 @media (max-width: 440px) {
