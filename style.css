@@ -154,7 +154,6 @@ main ul li {
   justify-content: space-between;
   gap: 8px;
   width: 100%;
-  overflow: scroll;
 }
 
 @media (max-width: 1095px) {
