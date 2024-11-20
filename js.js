@@ -21,39 +21,17 @@ function div_maker(card) {
   const qstshow = document.createElement("h3");
   const answrshow = document.createElement("p");
   const li = document.createElement("li");
-  const delett = document.createElement("button");
-  delett.textContent = "Edit Answer";
-  delett.style.background = "blue";
-  delett.style.color = "white";
-  delett.style.border = "none";
+
   qstshow.textContent = card.qstshow_my;
   answrshow.textContent = card.answrshow_my;
   answrshow.style.color = "red";
   ul.append(li);
   answrshow.classList.add("dd");
 
-  li.append(qstshow, answrshow, delett);
+  li.append(qstshow, answrshow);
 
   li.addEventListener("click", () => {
     answrshow.classList.toggle("dd");
-  });
-  delett.addEventListener("click", () => {
-    const newinput = document.createElement("input");
-    const newbtn = document.createElement("button");
-    newbtn.textContent = "done";
-    newbtn.style.color = "white";
-    newbtn.style.background = "green";
-    newbtn.style.padding = "8px 24px";
-    newbtn.style.display = "float";
-
-    li.append(newbtn, newinput);
-    newbtn.addEventListener("click", () => {
-      answrshow.textContent = newinput.value;
-      card.answrshow_my = newinput.value;
-      localStorage.setItem("flashcard", JSON.stringify(sflashcards));
-      newinput.style.display = "none";
-      newbtn.style.display = "none";
-    });
   });
 }
 save.addEventListener("click", () => {
