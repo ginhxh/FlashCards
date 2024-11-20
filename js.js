@@ -24,7 +24,9 @@ function div_maker(card) {
 
   qstshow.textContent = card.qstshow_my;
   answrshow.textContent = card.answrshow_my;
+
   answrshow.style.color = "red";
+
   ul.append(li);
   answrshow.classList.add("dd");
 

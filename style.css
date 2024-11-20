@@ -136,6 +136,7 @@ input {
   display: none;
 }
 .ull {
+  width: 100%;
   background: rgb(202, 212, 214);
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -152,6 +153,8 @@ main ul li {
   flex-direction: column;
   justify-content: space-between;
   gap: 8px;
+  width: 100%;
+  overflow: scroll;
 }
 
 @media (max-width: 1095px) {
